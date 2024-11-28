@@ -1,0 +1,131 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  background-color: #f3ece4; /* Soft cream background */
+  color: #5c4033; /* Dark brown text */
+}
+
+/* Main Title Header */
+.main-header {
+  background-color: #8b5a2b; /* Medium brown */
+  text-align: center;
+  padding: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Top Navigation Section */
+nav.nav {
+  background-color: #a07855; /* Light brown */
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #8b5a2b;
+}
+
+nav.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #5c4033; /* Dark brown */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav.nav a:hover {
+  color: #8b5a2b; /* Medium brown */
+}
+
+/* Main Content Section */
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Side Navigation (Articles) */
+.side-nav {
+  background-color: #d9c3ad; /* Soft light brown */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+  margin-bottom: 20px;
+}
+
+.article h2 {
+  font-size: 1.8em;
+  color: #8b5a2b; /* Medium brown */
+  margin-bottom: 10px;
+}
+
+.article p {
+  color: #5c4033; /* Dark brown */
+  line-height: 1.6;
+}
+
+/* Aside Section */
+.aside {
+  background-color: #d9c3ad; /* Soft light brown */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poster-image {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aside-text p {
+  color: #5c4033; /* Dark brown */
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #8b5a2b; /* Medium brown */
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+/* Button and Hover Effects */
+button, a {
+  cursor: pointer;
+}
+
+a:hover, button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
